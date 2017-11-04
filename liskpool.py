@@ -140,7 +140,7 @@ def pool ():
 
 		f.write ('echo Sending ' + str (x['balance']) + ' \(+' + str (pending) + ' pending\) to ' + x['address'] + '\n')
 		
-		data = { "secret": conf['secret'], "amount": int ((x['balance'] + pending) * 100000000), "recipientId": x['address'] }
+		data = { "secret": conf['secret'], "amount": int ((x['balance'] + pending - 0.1) * 100000000), "recipientId": x['address'] }
 		if conf['secondsecret'] != None:
 			data['secondSecret'] = conf['secondsecret']
 		
