@@ -1,11 +1,11 @@
 {
-	"coin": "OXY",
-	"node": "https://wallet.oxycoin.io",
-	"nodepay": "https://wallet.oxycoin.io",
-	"pubkey": "a126dcf6fca14220ac5ac820c1251c85c70a91c733008c060ee6af553244b92b",
+	"coin": "RISE",
+	"node": "https://wallet.rise.vision",
+	"nodepay": "https://wallet.rise.vision",
+	"pubkey": "3d6941dd0de03de60c21403d736739af2c98b2fde0535e9a9a0c8ddfe1d2fe24",
 	"percentage": 80,
 	"logfile": "poollogs.json",
-	"minpayout": 1.0,
+	"minpayout": 0.5,
 	"secret": "SECRET",
 	"secondsecret": "SECRET2",
     "donations": {
