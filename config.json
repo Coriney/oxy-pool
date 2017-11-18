@@ -14,7 +14,7 @@
     "donationspercentage": {"": 
     },
 	"skip": []
-	"transfer": [],
+	"transfer": [1],
 	"90": [],
 	"91": [],
 }
