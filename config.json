@@ -2,16 +2,19 @@
 	"coin": "RISE",
 	"node": "https://wallet.rise.vision",
 	"nodepay": "https://wallet.rise.vision",
-	"pubkey": "3d6941dd0de03de60c21403d736739af2c98b2fde0535e9a9a0c8ddfe1d2fe24",
-	"percentage": 80,
+	"pubkey": "978647d2536f640b98cf98c8d37d6773bec08a6116daecb63f29d04d2d07ccd1",
+	"percentage": 92,
 	"logfile": "poollogs.json",
-	"minpayout": 0.5,
-	"secret": "SECRET",
-	"secondsecret": "SECRET2",
+	"minpayout": 5.1,
+	"secret": "",
+	"secondsecret": "",
     "donations": {
 		
     },
     "donationspercentage": {"": 
     },
 	"skip": []
+	"transfer": [],
+	"90": [],
+	"91": [],
 }
