@@ -90,6 +90,8 @@ def estimatePayouts (log):
 	payouts = []
 	
 	for x in d['accounts']:
+		if not x['address' in conf['approved']:
+			continue
 		if x['balance'] == '0' or x['address'] in conf['skip']:
 			continue
 			
@@ -98,6 +100,9 @@ def estimatePayouts (log):
 	print ('Total weight is: %f' % weight)
 	
 	for x in d['accounts']:
+		if not x['address' in conf['approved']:
+			continue
+			
 		if int (x['balance']) == 0 or x['address'] in conf['skip']:
 			continue
 		
@@ -142,6 +147,9 @@ def pool ():
 		log['accounts'][x['address']]['received'] += (x['balance'] + pending)
 		if pending > 0:
 			log['accounts'][x['address']]['pending'] = 0
+		
+		if x['address'] == '12158656918322992282R':
+			continue
 		
 
 		f.write ('echo Sending ' + str (x['balance']) + ' \(+' + str (pending) + ' pending\) to ' + x['address'] + '\n')
