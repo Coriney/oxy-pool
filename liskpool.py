@@ -148,7 +148,7 @@ def pool ():
 		if pending > 0:
 			log['accounts'][x['address']]['pending'] = 0
 		
-		if x['address'] == '12158656918322992282R':
+		if x['address'] == '16709006601133628430R':
 			continue
 		
 
