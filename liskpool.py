@@ -90,8 +90,6 @@ def estimatePayouts (log):
 	payouts = []
 	
 	for x in d['accounts']:
-		if not x['address' in conf['approved']:
-			continue
 		if x['balance'] == '0' or x['address'] in conf['skip']:
 			continue
 			
@@ -100,16 +98,19 @@ def estimatePayouts (log):
 	print ('Total weight is: %f' % weight)
 	
 	for x in d['accounts']:
-		if not x['address' in conf['approved']:
-			continue
-			
 		if int (x['balance']) == 0 or x['address'] in conf['skip']:
 			continue
 		
-		if x['address'] in conf['90']:
-    			payouts.append ({ "address": x['address'], "balance": (float (x['balance']) / 100000000 * forged) * 90 / 92 / weight})
-		elif x['address'] in conf['91']:
-    			payouts.append ({ "address": x['address'], "balance": (float (x['balance']) / 100000000 * forged) * 91 / 92 / weight})
+		if x['address'] in conf['86']:
+    			payouts.append ({ "address": x['address'], "balance": (float (x['balance']) / 100000000 * forged) * 86 / 85 / weight})
+		elif x['address'] in conf['87']:
+    			payouts.append ({ "address": x['address'], "balance": (float (x['balance']) / 100000000 * forged) * 87 / 85 / weight})
+		elif x['address'] in conf['88']:
+    			payouts.append ({ "address": x['address'], "balance": (float (x['balance']) / 100000000 * forged) * 88 / 85 / weight})
+		elif x['address'] in conf['89']:
+    			payouts.append ({ "address": x['address'], "balance": (float (x['balance']) / 100000000 * forged) * 89 / 85 / weight})
+		elif x['address'] in conf['90']:
+    			payouts.append ({ "address": x['address'], "balance": (float (x['balance']) / 100000000 * forged) * 90 / 85 / weight})
 		else :
     			payouts.append ({ "address": x['address'], "balance": (float (x['balance']) / 100000000 * forged) / weight})
 		payouts.append ({ "address": x['address'], "balance": (float (x['balance']) / 100000000 * forged) / weight})
@@ -148,7 +149,7 @@ def pool ():
 		if pending > 0:
 			log['accounts'][x['address']]['pending'] = 0
 		
-		if x['address'] == '16709006601133628430R':
+		if x['address'] == '15455092118897280843R':
 			continue
 		
 
