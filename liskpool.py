@@ -90,6 +90,9 @@ def estimatePayouts (log):
 	payouts = []
 	
 	for x in d['accounts']:
+		if not x['address'] in conf['approved']:
+                        continue
+		
 		if x['balance'] == '0' or x['address'] in conf['skip']:
 			continue
 			
@@ -98,11 +101,14 @@ def estimatePayouts (log):
 	print ('Total weight is: %f' % weight)
 	
 	for x in d['accounts']:
+		if not x['address'] in conf['approved']:
+                        continue
+		
 		if int (x['balance']) == 0 or x['address'] in conf['skip']:
 			continue
 			
-		if not x['address'] in conf ['approved']:
-			continue
+		if x['address'] in conf['riser']:
+                        payouts.append ({ "address": '70R', "balance": (float (x['balance']) / 100000000 * forged) * 7 / 92 / weight})
 
 		payouts.append ({ "address": x['address'], "balance": (float (x['balance']) / 100000000 * forged) / weight})
 		#print (float (x['balance']) / 100000000, payouts [x['address']], x['address'])
