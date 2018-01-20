@@ -2,7 +2,7 @@
 	"coin": "RISE",
 	"node": "https://wallet.rise.vision",
 	"nodepay": "https://wallet.rise.vision",
-	"pubkey": "b36bd4b9be92425ba16c300fbbf649fbed6090cc46cb3540498491b4ab48e008",
+	"pubkey": "0b7bb40385c5261c8cc763babebc9ccf9d392e618dc15104db5efb1c6a5719ee",
 	"percentage": 90,
 	"logfile": "poollogs.json",
 	"minpayout": 1.1,
